@@ -1,0 +1,31 @@
+{
+  "name": "mqtt-express-server",
+  "version": "1.0.0",
+  "description": "For MQTT & Express WEB Server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --watch src",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serip39/mqtt-express-server.git"
+  },
+  "keywords": [
+    "mqtt",
+    "express"
+  ],
+  "author": "serip39",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serip39/mqtt-express-server/issues"
+  },
+  "homepage": "https://github.com/Serip39/mqtt-express-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mqtt": "^4.2.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
