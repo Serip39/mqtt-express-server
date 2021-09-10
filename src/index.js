@@ -1,6 +1,9 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 const port = 5000
+
+app.use(cors())
 
 const fs = require('fs')
 const file_path = './src/logs/status.json'
@@ -82,7 +85,7 @@ app.get('/api/previous', (req, res) => {
 
 app.post('/api/status', (req, res) => {
   logger.debug('POST /api/status')
-  mqtt_client.publish('operation', 　"5")
+  mqtt_client.publish('operation', "5")
   logger.debug("mqtt_client.publish('operation', 'status')")
   res.json({ message: 'success' })
 })

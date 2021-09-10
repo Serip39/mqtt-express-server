@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Serip39/mqtt-express-server#readme",
   "dependencies": {
     "chalk": "^4.1.2",
+    "cors": "^2.8.5",
     "date-format": "^3.0.0",
     "express": "^4.17.1",
     "log4js": "^6.3.0",
