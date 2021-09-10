@@ -96,7 +96,7 @@ app.get('/api/status', (req, res) => {
 app.get('/api/select', (req, res) => {
   const index = req.query.index
   logger.debug("GET /api/select?index=" + index)
-  const command = index + 6
+  const command = Number(index) + 6
   mqtt_client.publish('operation', String(command))
-  res.json(jsonObject)
+  res.json({ message: 'success' })
 })
